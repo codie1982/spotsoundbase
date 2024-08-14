@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './App.css';
-import './Page.css'
+import '../src/styles/Styles.css'
 function App() {
   const [email, setEmail] = useState('');
   const [formVisible, setFormVisible] = useState(false);
@@ -30,6 +30,9 @@ function App() {
         music is not only in your ears, but also in your steps! Now, everywhere is a concert area
         for you.
       </p>
+    </div>
+    <div >
+      <i className='fas fa-search'></i>
     </div>
     <div className="actions">
       <button className="cta-button" onClick={() => setFormVisible(true)}>
