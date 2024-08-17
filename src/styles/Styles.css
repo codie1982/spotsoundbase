@@ -10,118 +10,23 @@
   border: none;
   text-transform: none;
   font-family: "Roboto", system-ui;
+  transition: 0.2 ease;
 }
 :root{
---main-color:#e1e1e1;
-
+  --main-color:#66CBFF;
+  --white-color:#ffffff;
+  --black-color:#1a1a1a;
+  --border : 0.1rem solid rgba(255,255,255,0)
 }
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: url('../../public/background_image.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: white;
-  }
-  
-  .landing-page {
-    text-align: center;
-    padding: 50px;
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    margin: auto;
-    max-width: 800px;
-  }
-  
-  .header .title {
-    font-size: 48px;
-    margin-bottom: 10px;
-  }
-  
-  .header .subtitle {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .header .description {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 40px;
-  }
-  
-  .actions .cta-button {
-    background-color: #0099ff;
-    border: none;
-    color: white;
-    padding: 15px 30px;
-    font-size: 18px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .actions .cta-button:hover {
-    background-color: #007acc;
-  }
-  
-  .email-form {
-    margin-top: 20px;
-  }
-  
-  .email-form input {
-    padding: 10px;
-    font-size: 16px;
-    margin-right: 10px;
-    border-radius: 5px;
-    border: none;
-  }
-  
-  .email-form button {
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: none;
-    background-color: #00cc66;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .features {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
-  }
-  
-  .feature {
-    text-align: center;
-  }
-  
-  .feature img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
-  }
-  
-  .feature p {
-    font-size: 16px;
-  }
-  
+html{
+  overflow-x: hidden;
+  scroll-padding-top: 9rem ;
+  scroll-behavior: smooth;
+}
 
-  /*  FONT */
-  .roboto-light {
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .roboto-regular {
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .roboto-medium {
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .roboto-bold {
-    font-weight: 700;
-    font-style: normal;
-  }
+body {
+  margin: 0;
+  @apply bg-black text-white;
+  background: url('../assets/images/background_image.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
